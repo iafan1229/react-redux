@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <script type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e1e60fae647e747aca3181dfabcd058e&libraries=services"></script>
+  <title>React App</title>
+  <style>
+    .default {
+      position: absolute;
+      top: -99999px;
+    }
+
+    .mask {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background: #111;
+      transition: opacity 2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font: 20px/1 'arial';
+      z-index: 10020;
+    }
+
+    .mask.off {
+      opacity: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <!-- 강제로 img, vid요소를 생성 출력해서 이미지, 영상을 캐싱하기 위한 영역, 화면에서는 숨김처리 -->
+  <div class="default"></div>
+
+  <!-- 모든 이미지와 영상이 로딩완료되기전까지 화면을 가려줄 로딩박스 -->
+  <div class="mask">LODING... <span class="percent"></span>% complete</div>
+
+  <script>
+    const url = 'http://iafan1229.github.io/react-redux';
+
+    const vids = [
+      url + '/img/vid1.mp4',
+      url + '/img/vid2.mp4',
+      url + '/img/vid3.mp4',
+      url + '/img/vid4.mp4'
+    ];
+
+    const defaults = document.querySelector('.default');
+    const mask = document.querySelector('.mask');
+    const percent = document.querySelector(".percent");
+    const lenVid = vids.length;
+
+    let tags = '';
+
+    function createDOM() {
+      vids.forEach(src => {
+        tags += `<video src=${src}></video>`
+      })
+      defaults.innerHTML = tags;
+    }
+
+    function loadVid() {
+      return new Promise((res, rej) => {
+        const vidDOM = document.querySelectorAll('video');
+        let countVid = 0;
+        percent.innerText = countVid / 4 * 100;
+
+        vidDOM.forEach(vid => {
+          vid.onloadeddata = () => {
+            countVid++;
+            percent.innerText = countVid / 4 * 100;
+            if (countVid === lenVid) {
+              res(true);
+            }
+          }
+        })
+      })
+    }
+
+    createDOM();
+
+    const init = () => {
+      loadVid()
+        .then((result) => {
+          if (result) {
+            mask.classList.add('off');
+
+            setTimeout(() => {
+              mask.remove();
+              defaults.remove();
+            }, 2000)
+          }
+        })
+    }
+
+    // //동적으로 만들어진 img, vid dom의 이미지, 영상 소스가 모두 로딩완료되서
+    // //두 함수 모두 promise객체를 리턴하면 동기적으로 then구문 실행
+    // Promise.all([loadVid()]).then(result => {
+    //   console.log(result);
+    //   if (result) {
+    //     mask.classList.add('off');
+
+    //     setTimeout(() => {
+    //       mask.remove();
+    //       defaults.remove();
+    //     }, 2000)
+
+    //   }
+    // })
+
+    init();
+
+    //test
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+{
+    "items": [
+        {
+            "type": "Develop Team",
+            "position": "Director(CEO)",
+            "name": "Monica",
+            "image": "develop1.jpg"
+        },
+        {
+            "type": "Develop Team",
+            "position": "Senior staff",
+            "name": "Julian",
+            "image": "develop2.jpg"
+        },
+        {
+            "type": "Develop Team",
+            "position": "Junior staff",
+            "name": "Mike",
+            "image": "develop3.jpg"
+        },
+        {
+            "type": "Project Managing",
+            "position": "Manager",
+            "name": "Yuri Lee",
+            "image": "manage1.jpg"
+        },
+        {
+            "type": "Project Managing",
+            "position": "Junior staff",
+            "name": "Miyang Lee",
+            "image": "manage2.jpg"
+        },
+        {
+            "type": "Human Resource",
+            "position": "Manager",
+            "name": "Andrea",
+            "image": "sales1.jpg"
+        },
+        {
+            "type": "Design Team",
+            "position": "Manager",
+            "name": "Angelina",
+            "image": "design1.jpg"
+        }
+    ]
+}
