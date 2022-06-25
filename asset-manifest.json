@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-redux/static/css/main.ce7552d2.css",
+    "main.js": "/react-redux/static/js/main.f7f48185.js",
+    "static/media/BebasNeue-Regular.woff": "/react-redux/static/media/BebasNeue-Regular.558c0b09724cc2d2f36f.woff",
+    "index.html": "/react-redux/index.html",
+    "main.ce7552d2.css.map": "/react-redux/static/css/main.ce7552d2.css.map",
+    "main.f7f48185.js.map": "/react-redux/static/js/main.f7f48185.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce7552d2.css",
+    "static/js/main.f7f48185.js"
+  ]
+}
