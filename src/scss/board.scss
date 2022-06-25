@@ -73,8 +73,8 @@
 			width: 100%;
 			background: white;
 			border-radius: 4px;
-			box-shadow: rgb(60 66 87 / 12%) 0px 7px 14px 0px,
-				rgb(0 0 0 / 12%) 0px 3px 6px 0px;
+			box-shadow: rgba(60, 66, 87, 12%) 0px 7px 14px 0px,
+				rgba(0, 0, 0, 12%) 0px 3px 6px 0px;
 			form.write {
 				padding: 48px;
 				fieldset {
@@ -103,15 +103,15 @@
 								min-height: 44px;
 								border: unset;
 								border-radius: 4px;
-								outline-color: rgb(84 105 212 / 0.5);
-								background-color: rgb(255, 255, 255);
-								box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px,
-									rgb(0 0 0 / 0%) 0px 0px 0px 0px,
-									rgb(0 0 0 / 0%) 0px 0px 0px 0px,
-									rgb(60 66 87 / 16%) 0px 0px 0px 1px,
-									rgb(0 0 0 / 0%) 0px 0px 0px 0px,
-									rgb(0 0 0 / 0%) 0px 0px 0px 0px,
-									rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+								outline-color: rgba(84, 105, 212, 0.5);
+								background-color: rgba(255, 255, 255, 1);
+								box-shadow: rgba(0, 0, 0, 0%) 0px 0px 0px 0px,
+									rgba(0, 0, 0, 0%) 0px 0px 0px 0px,
+									rgba(0, 0, 0, 0%) 0px 0px 0px 0px,
+									rgba(60, 66, 87, 16%) 0px 0px 0px 1px,
+									rgba(0, 0, 0, 0%) 0px 0px 0px 0px,
+									rgba(0, 0, 0, 0%) 0px 0px 0px 0px,
+									rgba(0, 0, 0, 0%) 0px 0px 0px 0px;
 							}
 						}
 					}
@@ -125,10 +125,10 @@
 					padding: 10px 0;
 					min-width: 150px;
 					background-color: black;
-					box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px,
-						rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px,
-						rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
-						rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+					// box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+					// 	rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px,
+					// 	rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px,
+					// 	rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
 					color: #fff;
 					font-weight: 600;
 					cursor: pointer;
@@ -203,7 +203,7 @@
 		margin-bottom: 3rem;
 		padding: 2rem;
 		border-radius: 3px;
-		box-shadow: 0 2px 0 rgb(0 0 0 / 5%), 0 5px 20px rgb(0 0 0 / 10%);
+		box-shadow: 0 2px 0 rgba(0, 0, 0, 5%), 0 5px 20px rgba(0, 0, 0, 10%);
 		background-color: #fff;
 		transition: all 100ms ease-in-out;
 		.content-table {
@@ -220,7 +220,7 @@
 			}
 			th {
 				width: 200px;
-				background: rgb(46, 46, 46);
+				background: rgba(46, 46, 46, 1);
 				border-bottom: 1px solid;
 				color: #2ec2b0;
 				color: #fff;

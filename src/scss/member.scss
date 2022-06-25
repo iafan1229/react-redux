@@ -1,51 +1,52 @@
 .container {
-  .inner {
-    .data {
-      table {
-          display: inline-block;
-          margin-right: 40px;
-          margin-top: 20px;
-          width: auto;
-          max-width: none;    
-          border-collapse: collapse;
-          border-radius:10px;
-          overflow: hidden;
-          box-shadow: 0 0 20px rgba(0,0,0,23%);
-          min-height:445px;
-          &:nth-child(3n) {
-            margin-right: 0;
-          }
-          border: none;
-          th,td {
-              min-width:100px;
-              height:50px;
-              text-align: center;
-              position: relative;
-              padding: 20px;
-              color: #fff;
-              font-size:18px;
-              font-weight:700;
-              border-right: none;
-          }
-          th {
-            background-color: #333;
-            text-align: center;  
-            border-bottom: 1px solid #111;
-          }
-          tr {
-            td {
-              border-color:rgb(201, 199, 199);
-              color:#333;
-              &:first-child {
-                height: 472px;
-                img {
-                  height: 100%;
-                  object-fit: cover;
-                }
-              }
-            }
-          }
-      }
-    }
-  }
+	.inner {
+		.data {
+			table {
+				display: inline-block;
+				margin-right: 40px;
+				margin-top: 20px;
+				width: auto;
+				max-width: none;
+				border-collapse: collapse;
+				border-radius: 10px;
+				overflow: hidden;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 23%);
+				min-height: 445px;
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+				border: none;
+				th,
+				td {
+					min-width: 100px;
+					height: 50px;
+					text-align: center;
+					position: relative;
+					padding: 20px;
+					color: #fff;
+					font-size: 18px;
+					font-weight: 700;
+					border-right: none;
+				}
+				th {
+					background-color: #333;
+					text-align: center;
+					border-bottom: 1px solid #111;
+				}
+				tr {
+					td {
+						border-color: rgba(201, 199, 199, 1);
+						color: #333;
+						&:first-child {
+							height: 472px;
+							img {
+								height: 100%;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

@@ -154,7 +154,7 @@ header {
 				display: flex;
 				margin-bottom: 3%;
 				padding: 30px;
-				background: rgb(248, 241, 238);
+				background: rgba(248, 241, 238, 1);
 				border-radius: 10px;
 				cursor: pointer;
 				pre {
@@ -170,7 +170,7 @@ header {
 				}
 				&:hover {
 					transition: all 0.5s;
-					background: rgb(255, 250, 230);
+					background: rgba(255, 250, 230, 1);
 				}
 				p {
 					line-height: 23px;
@@ -197,7 +197,7 @@ header {
 							display: inline-block;
 							padding: 3px 5px;
 							border-radius: 5px;
-							background: rgb(238, 228, 186);
+							background: rgba(238, 228, 186, 1);
 						}
 					}
 					ul {
@@ -244,7 +244,7 @@ header {
 				}
 				&:hover {
 					transition: background 1s;
-					background: rgb(70, 48, 133);
+					background: rgba(70, 48, 133, 1);
 				}
 			}
 			#map {
@@ -435,7 +435,7 @@ header {
 		}
 	}
 	&.vis2 {
-		background: rgb(216, 240, 250);
+		background: rgba(216, 240, 250, 1);
 		.inner {
 			h2 {
 				padding: 5vh 0;
@@ -486,7 +486,7 @@ header {
 		}
 	}
 	&.vis3 {
-		background: rgb(182, 228, 248);
+		background: rgba(182, 228, 248, 1);
 		.inner {
 			h2 {
 				font-size: 30px;
@@ -504,7 +504,7 @@ header {
 	}
 	&.vis4 {
 		display: block;
-		background: rgb(147, 215, 245);
+		background: rgba(147, 215, 245, 1);
 		h2 {
 			padding-top: 10vh;
 			padding-bottom: 5vh;
