@@ -1,0 +1,46 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body * {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.visual .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.visual .inner h2 {
+  text-align: center;
+  font-family: 'BMJUA';
+  font-weight: 200;
+  font-size: 50px;
+}
+
+.visual .inner h2 span {
+  font-family: 'BMJUA';
+}
+
+.visual .inner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.visual .inner ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.visual .inner p {
+  font-size: 16px;
+  word-break: break-all;
+}
+/*# sourceMappingURL=common.css.map */

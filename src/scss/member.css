@@ -1,0 +1,53 @@
+.container .inner .data table {
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 20px;
+  width: auto;
+  max-width: none;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
+  min-height: 445px;
+  border: none;
+}
+
+.container .inner .data table:nth-child(3n) {
+  margin-right: 0;
+}
+
+.container .inner .data table th,
+.container .inner .data table td {
+  min-width: 100px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-right: none;
+}
+
+.container .inner .data table th {
+  background-color: #333;
+  text-align: center;
+  border-bottom: 1px solid #111;
+}
+
+.container .inner .data table tr td {
+  border-color: #c9c7c7;
+  color: #333;
+}
+
+.container .inner .data table tr td:first-child {
+  height: 472px;
+}
+
+.container .inner .data table tr td:first-child img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=member.css.map */
