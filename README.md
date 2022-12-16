@@ -3,7 +3,6 @@
 <img src="https://postfiles.pstatic.net/MjAyMjA2MDFfMjI5/MDAxNjU0MDgyNzA5NTAx.kxB81QXnXsypiYHZjDPar9XnNCQUGPNyVaQk0UWMgeMg.RjuI69DhUmRb4zXeatANonF6KFd3f9ueZnNKdUVFmm0g.GIF.home124/GIF_2022-06-01_%EC%98%A4%ED%9B%84_8-24-04.gif?type=w773">
 <img src="https://postfiles.pstatic.net/MjAyMjA2MDFfMTYw/MDAxNjU0MDgyNjc3NjM5.Vnz1MvQarpepN63e_441dB3R6c_pJrSWhXQIOiZUN0wg.ll8I4x7__5nRIhS5dbAxbim2I5E7vG3iFukzPhjanKEg.PNG.home124/map.png?type=w773">
 <a href="https://community-hydev.netlify.app" target="_blank">웹 애플리케이션 링크 바로가기</a>
-
 <h1>Community Site</h1>
 <ul>
   <li>종합 커뮤니티 포털사이트입니다.</li>
